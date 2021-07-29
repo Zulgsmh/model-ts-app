@@ -1,0 +1,15 @@
+npx gitignore node
+yarn init  or yarn init --yes
+changes in package.json  => 
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    
+        "scripts": {
+        "build": "tsc",
+        "dev": "yarn build --watch --preserveWatchOutput",
+        "lint": "eslint src --ext js,ts",
+        "test": "jest"
+    }
+
+yarn add -D typescript eslint jest
+volta pin node yarn (permit to use stables version of node and yarn)
