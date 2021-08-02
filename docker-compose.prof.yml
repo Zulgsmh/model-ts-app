@@ -1,0 +1,7 @@
+version: "3.7"
+
+services:
+  my-app:
+    build:
+      target: production
+    command: yarn dist/index.js

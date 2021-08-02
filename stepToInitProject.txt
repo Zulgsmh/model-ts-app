@@ -13,3 +13,28 @@ changes in package.json  =>
 
 yarn add -D typescript eslint jest
 volta pin node yarn (permit to use stables version of node and yarn)
+git init
+git add -A
+git commit -m "initial commit"
+yarn tsc --init
+changes in tsconfig.json =>
+    "target": "ES2018",
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true, 
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "stripInternal": true,
+    "types": [],   
+    //"esModuleInterop": true, 
+    //"skipLibCheck": true, 
+"include": ["src"]
+
+create index.ts in src 
+
+yarn eslint --init
+
+yarn add -D jest @types/jest
+
+yarn add -D @babel/preset-env @babel/preset-typescript
